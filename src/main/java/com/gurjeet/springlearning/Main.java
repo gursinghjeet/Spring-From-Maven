@@ -9,7 +9,7 @@ public class Main {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfg.xml");
 
-        Alien alien = (Alien) context.getBean("alien", Alien.class);
+        Alien alien = context.getBean("alien", Alien.class);
         alien.code();
     }
 }

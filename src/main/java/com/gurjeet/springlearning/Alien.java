@@ -1,9 +1,15 @@
 package com.gurjeet.springlearning;
 
 public class Alien {
-
     Computer com;
     int age;
+
+    public Alien(int age, Computer com) {
+        System.out.println("Alien Object created and age is " + age);
+        com.computing();
+        this.age = age;
+        this.com = com;
+    }
 
     public Computer getCom() {
         return com;

@@ -6,6 +6,8 @@
 
     <!-- bean definitions here -->
     <bean id="alien" class="com.gurjeet.springlearning.Alien" autowire="byName">
+        <constructor-arg index="0" value="21"></constructor-arg>
+        <constructor-arg index="1" ref="desk"></constructor-arg>
         <property name="com" ref="lap"/>
     </bean>
 
