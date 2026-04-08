@@ -2,12 +2,15 @@ package com.gurjeet.springlearning;
 
 public class Alien {
 
-    Laptop lap;
-    Desktop desk;
+    Computer com;
     int age;
 
-    public void setDesk(Computer desk) {
-        this.desk = (Desktop) desk;
+    public Computer getCom() {
+        return com;
+    }
+
+    public void setCom(Computer com) {
+        this.com = com;
     }
 
     public int getAge() {
@@ -18,11 +21,8 @@ public class Alien {
         this.age = age;
     }
 
-    public void setLap(Computer lap) {
-        this.lap = (Laptop) lap;
-    }
+    public void code() {
 
-    public void code(){
-        if(lap.compile()) System.out.println("Coding...");
+        if(com.computing()) System.out.println("Coding...");
     }
 }

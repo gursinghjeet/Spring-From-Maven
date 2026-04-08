@@ -2,7 +2,8 @@ package com.gurjeet.springlearning;
 
 public class Desktop implements Computer {
     @Override
-    public void computing() {
+    public boolean computing() {
         System.out.println("Desktop Windows");
+        return true;
     }
 }

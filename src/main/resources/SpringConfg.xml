@@ -5,8 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="com.gurjeet.springlearning.Alien">
-        <property name="desk" ref="desk"/>
+    <bean id="alien" class="com.gurjeet.springlearning.Alien" autowire="byName">
+        <property name="com" ref="lap"/>
     </bean>
 
     <bean id="lap" class="com.gurjeet.springlearning.Laptop">
